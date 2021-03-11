@@ -43,6 +43,9 @@ namespace ADV.REST.Test
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ADV.REST.Test v1"));
             }
 
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ADV.REST.Test v1"));
+
             app.UseRouting();
 
             app.UseAuthorization();
